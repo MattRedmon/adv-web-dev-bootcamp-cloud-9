@@ -3,9 +3,14 @@ var express = require("express");
 var app = express();
 
 
+var todoRoutes = require("./routes/todos");
+
+
 app.get("/", function(req, res) {
-    res.send("HI THERE FROM EXPRESS");
+    res.send("Hello from the Root Route");
 });
+
+app.use("/api/todos", todoRoutes);
 
 
 
