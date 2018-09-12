@@ -1,11 +1,11 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
 
 // below defines/creates our schema
- todoSchema = new mongoose.Schema({
+var todoSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: "Name can not be blank!"
+        required: 'Name cannot be blank!'
     },
     completed: {
         type: Boolean,
@@ -21,7 +21,7 @@ var mongoose = require("mongoose");
 // code below compiles our schema
 // we pass in name of the model "Todo"
 // then pass in the schema we created above "todoSchema"
-var Todo = mongoose.model("Todo", todoSchema);
+var Todo = mongoose.model('Todo', todoSchema);
 
 
 
@@ -36,12 +36,3 @@ module.exports = Todo;
 // models/index.js file
 
 
-
-
-// name
-
-
-// completed
-
-
-// created date
